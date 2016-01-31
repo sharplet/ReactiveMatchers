@@ -11,10 +11,12 @@
 		05A5B69B1C5DE1E300097E4A /* RecordFailureMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5B69A1C5DE1E300097E4A /* RecordFailureMatcher.swift */; };
 		05AA859C1C5DCC28001EA0E8 /* ReactiveMatchers.h in Headers */ = {isa = PBXBuildFile; fileRef = 05AA859B1C5DCC28001EA0E8 /* ReactiveMatchers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05AA85A31C5DCC28001EA0E8 /* ReactiveMatchers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AA85981C5DCC28001EA0E8 /* ReactiveMatchers.framework */; };
+		05AA85B31C5DCD14001EA0E8 /* CompleteMatcherSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AA85B21C5DCD14001EA0E8 /* CompleteMatcherSpec.swift */; };
 		05AA85B91C5DCE53001EA0E8 /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05AA85B51C5DCE53001EA0E8 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		05AA85BA1C5DCE53001EA0E8 /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05AA85B61C5DCE53001EA0E8 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		05AA85BB1C5DCE53001EA0E8 /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05AA85B71C5DCE53001EA0E8 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		05AA85BC1C5DCE53001EA0E8 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05AA85B81C5DCE53001EA0E8 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05AA85C31C5DD410001EA0E8 /* CompleteMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AA85C21C5DD410001EA0E8 /* CompleteMatcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,10 +54,12 @@
 		05AA859D1C5DCC28001EA0E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05AA85A21C5DCC28001EA0E8 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05AA85A91C5DCC28001EA0E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05AA85B21C5DCD14001EA0E8 /* CompleteMatcherSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteMatcherSpec.swift; sourceTree = "<group>"; };
 		05AA85B51C5DCE53001EA0E8 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
 		05AA85B61C5DCE53001EA0E8 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
 		05AA85B71C5DCE53001EA0E8 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/Mac/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		05AA85B81C5DCE53001EA0E8 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
+		05AA85C21C5DD410001EA0E8 /* CompleteMatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteMatcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				05AA859B1C5DCC28001EA0E8 /* ReactiveMatchers.h */,
+				05AA85C21C5DD410001EA0E8 /* CompleteMatcher.swift */,
 				05AA859D1C5DCC28001EA0E8 /* Info.plist */,
 			);
 			path = Sources;
@@ -117,6 +122,7 @@
 		05AA85A61C5DCC28001EA0E8 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				05AA85B21C5DCD14001EA0E8 /* CompleteMatcherSpec.swift */,
 				05A5B6971C5DE04000097E4A /* Helpers */,
 				05AA85A91C5DCC28001EA0E8 /* Info.plist */,
 			);
@@ -243,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05AA85C31C5DD410001EA0E8 /* CompleteMatcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05AA85B31C5DCD14001EA0E8 /* CompleteMatcherSpec.swift in Sources */,
 				05A5B69B1C5DE1E300097E4A /* RecordFailureMatcher.swift in Sources */,
 				05A5B6991C5DE05000097E4A /* String+Trim.swift in Sources */,
 			);
