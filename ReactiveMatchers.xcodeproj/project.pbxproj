@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05A5B6991C5DE05000097E4A /* String+Trim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5B6981C5DE05000097E4A /* String+Trim.swift */; };
+		05A5B69B1C5DE1E300097E4A /* RecordFailureMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5B69A1C5DE1E300097E4A /* RecordFailureMatcher.swift */; };
 		05AA859C1C5DCC28001EA0E8 /* ReactiveMatchers.h in Headers */ = {isa = PBXBuildFile; fileRef = 05AA859B1C5DCC28001EA0E8 /* ReactiveMatchers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05AA85A31C5DCC28001EA0E8 /* ReactiveMatchers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AA85981C5DCC28001EA0E8 /* ReactiveMatchers.framework */; };
 		05AA85B31C5DCD14001EA0E8 /* ReactiveMatchersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AA85B21C5DCD14001EA0E8 /* ReactiveMatchersSpec.swift */; };
@@ -44,6 +46,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		05A5B6981C5DE05000097E4A /* String+Trim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Trim.swift"; sourceTree = "<group>"; };
+		05A5B69A1C5DE1E300097E4A /* RecordFailureMatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordFailureMatcher.swift; sourceTree = "<group>"; };
 		05AA85981C5DCC28001EA0E8 /* ReactiveMatchers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveMatchers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05AA859B1C5DCC28001EA0E8 /* ReactiveMatchers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactiveMatchers.h; sourceTree = "<group>"; };
 		05AA859D1C5DCC28001EA0E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -75,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05A5B6971C5DE04000097E4A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				05A5B69A1C5DE1E300097E4A /* RecordFailureMatcher.swift */,
+				05A5B6981C5DE05000097E4A /* String+Trim.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		05AA858E1C5DCC28001EA0E8 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				05AA85B21C5DCD14001EA0E8 /* ReactiveMatchersSpec.swift */,
+				05A5B6971C5DE04000097E4A /* Helpers */,
 				05AA85A91C5DCC28001EA0E8 /* Info.plist */,
 			);
 			path = Tests;
@@ -240,6 +254,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				05AA85B31C5DCD14001EA0E8 /* ReactiveMatchersSpec.swift in Sources */,
+				05A5B69B1C5DE1E300097E4A /* RecordFailureMatcher.swift in Sources */,
+				05A5B6991C5DE05000097E4A /* String+Trim.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
