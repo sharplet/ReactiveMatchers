@@ -20,6 +20,24 @@ final class CompleteMatcherSpec: FailureRecordingSpec {
           expect(producer).to(complete())
         }.to(recordFailure("failed - expected producer to complete"))
       }
+
+      it("passes if a signal asynchronously completes") {
+        let (signal, observer) = Signal<Int, NoError>.pipe()
+        let delayed = signal.delay(0.1, onScheduler: QueueScheduler())
+
+        observer.sendCompleted()
+
+        expect {
+          expect(delayed).toEventually(complete())
+        }.toNot(recordFailure())
+      }
+
+      it("passes if a signal producer asynchronously completes") {
+        let delayed = SignalProducer<Int, NoError>.empty.delay(0.1, onScheduler: QueueScheduler())
+        expect {
+          expect(delayed).toEventually(complete())
+        }.toNot(recordFailure())
+      }
     }
 
   }
